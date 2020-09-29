@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tim Phillips">
+    <meta name="description" content="A short trivia quiz that you can fill out online!">
+    
+    <meta property="og:image" content="background.png">
+    <meta property="og:description" content="Tim Phillips' personal site.">
+    <meta property="og:title" content="Unit 3 Test">
+    
+    <title>Trivia Night</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url(images/background.png);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+    </nav>
+
+    <form action="data/quizanswers.json" method="POST">
+        <fieldset>
+            <legend>Multiple Choice</legend>
+            
+            <p>
+                What is the <em>scientific</em> name of H<sub>2</sub>O?
+                <ul>
+                    <li><input type="radio" id="air" name="question1" value="air">
+                    <label for="air">Air</label></li>
+                    <li><input type="radio" id="fire" name="question1" value="fire">
+                    <label for="fire">Fire</label></li>
+                    <li><input type="radio" id="earth" name="question1" value="earth">
+                    <label for="earth">Earth</label></li>
+                    <li><input type="radio" id="water" name="question1" value="water">
+                    <label for="water">Water</label></li>
+                </ul>
+            </p>
+
+            <p>
+                What is the <em>most popular</em> name for Dec. 25<sup>th</sup>
+                <ul>
+                    <li><input type="radio" id="christmas" name="question2" value="christmas">
+                    <label for="christmas">Christmas</label></li>
+                    <li><input type="radio" id="thanksgiving" name="question2" value="thanksgiving">
+                    <label for="thanksgiving">Thanksgiving</label></li>
+                    <li><input type="radio" id="valentines-day" name="question2" value="valentines-day">
+                    <label for="valentines-day">Valentine's Day</label></li>
+                    <li><input type="radio" id="halloween" name="question2" value="halloween">
+                    <label for="halloween">Halloween</label></li>
+                </ul>
+            </p>
+
+            <p>
+                Which of the following is the chemical code for <strong>sugar</strong>?
+                <ul>
+                    <li><input type="checkbox" id="C12H22O11" name="question3" value="C12H22O11">
+                    <label for="C12H22O11">C<sub>12</sub>H<sub>22</sub>O<sub>11</sub></label></li>
+                    <li><input type="checkbox" id="C5H10O5" name="question3" value="C5H10O5">
+                    <label for="C5H10O5">C<sub>5</sub>H<sub>10</sub>O<sub>5</sub></label></li>
+                    <li><input type="checkbox" id="C6H1206" name="question3" value="C6H1206">
+                    <label for="C6H1206">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></label></li>
+                    <li><input type="checkbox" id="C11H22O11" name="question3" value="C11H22O11">
+                    <label for="C11H22O11">C<sub>11</sub>H<sub>22</sub>O<sub>11</sub></label></li>
+                </ul>
+            </p>
+
+            <p>
+                Whic of the following are <strong>even</strong>?
+                <ul>
+                    <li><input type="checkbox" id="1st" name="question4" value="1st">
+                    <label for="1st">1<sup>st</sup></label></li>
+                    <li><input type="checkbox" id="2nd" name="question4" value="2nd">
+                    <label for="2nd">2<sup>nd</sup></label></li>
+                    <li><input type="checkbox" id="3rd" name="question4" value="3rd">
+                    <label for="3rd">3<sup>rd</sup></label></li>
+                    <li><input type="checkbox" id="4th" name="question4" value="4th">
+                    <label for="4th">4<sup>th</sup></label></li>
+                </ul>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

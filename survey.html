@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tim Phillips">
+    <meta name="description" content="A quick digital survey.">
+    
+    <meta property="og:image" content="background.png">
+    <meta property="og:description" content="Tim Phillips' personal site.">
+    <meta property="og:title" content="Unit 3 Test">
+    
+    <title>Survey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url(images/background.png);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+    </nav>
+
+    <h1>THANK YOU!</h1>
+    <p>We appreciate you visiting our site. <em>Without users like you we could not continue.</em></p>
+    <p><strong>PLEASE</strong> take a minute to fill out this survey and tell us how we can get better.</p>
+
+    <form action="data/surverydata.json" method="POST">
+        <fieldset>
+            <legend>Survey</legend>
+ 
+            <p>
+                <ul>
+                    <li><label for="name">Name <input type="text" id="name" name="surveyee.name"></label></li>
+                    <li><label for="email">Email <input type="email" id="email" name="surveyee.email"></label></li>
+                    <li><label for="phone">Phone Number <input type="tel" id="phone" name="surveyee.phone"></label></li>
+                    <li>Please tell us anything that we can improve on:</li>
+                    <li><label for="comments"><textarea name="comments" id="comments" cols="40" rows="10"></textarea></label></li>
+                </ul>
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tim Phillips">
+    <meta name="description" content="The homepage for Tim Phillips' personal site.">
+    
+    <meta property="og:image" content="background.png">
+    <meta property="og:description" content="Tim Phillips' personal site.">
+    <meta property="og:title" content="Unit 3 Test">
+    
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-image: url(images/background.png);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </fieldset>
+    </nav>
+
+    <h1>Welcome to my site!</h1>
+    <p><em>On this site  you can take our short quiz and then you can fill out our survery.</em></p>
+    <p><strong>The only way that we can get better is by hearing what you have to say!</strong></p>
+
+    <h2>Log In Below</h2>
+
+    <form action="data/userinfo.json" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+ 
+            <p>
+                <ul>
+                    <li><label for="name">User Name <input type="text" id="name" name="user.name"></label></li>
+                    <li><label for="password">Password <input type="password" id="password" name="user.password"></label></li>
+                    <li><label for="id">User Identification Number <input type="number" id="id" name="user.id"></label></li>
+                    <li><label for="date">Today's Date <input type="date" id="date" name="user.date"></label></li>
+                    <li style="list-style: none;"><button type="submit">Submit</button></li>
+                </ul>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
